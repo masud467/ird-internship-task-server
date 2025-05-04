@@ -9,7 +9,10 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "https://ird-internship-task-client.vercel.app",
+    ],
     credentials: true,
     optionsSuccessStatus: 200,
   })
